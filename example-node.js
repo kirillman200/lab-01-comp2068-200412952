@@ -21,4 +21,4 @@ app.get('/', (request, response) => {
     });
 });
 
-app.listen(3000);
+app.listen((process.env.PORT || 4000), () => console.log('Listening on 4000'));
